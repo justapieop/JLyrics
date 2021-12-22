@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id 'maven-publish'
 }
 
 group 'me.justapie'
@@ -10,21 +9,9 @@ repositories {
     mavenCentral()
 }
 
-publishing {
-    repositories {
-        maven {
-            name = "OSSRH"
-            url = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
-            credentials {
-                username = System.getenv("MAVEN_USERNAME")
-                password = System.getenv("MAVEN_PASSWORD")
-            }
-        }
-    }
-}
-
 dependencies {
     testImplementation 'junit:junit:4.13.2'
+    implementation 'com.github.jitpack:gradle-simple:1.0'
     implementation 'org.jsoup:jsoup:1.14.3'
     implementation 'com.typesafe:config:1.4.1'
     implementation 'org.json:json:20211205'
