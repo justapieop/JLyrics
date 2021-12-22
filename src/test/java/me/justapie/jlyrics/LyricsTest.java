@@ -13,13 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jagrosh.jlyrics;
+package me.justapie.jlyrics;
 
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
-import java.util.concurrent.ExecutionException;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import java.util.concurrent.ExecutionException;
+
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 /**
  *
