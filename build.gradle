@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'me.justapie'
+version '0.5'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jsoup:jsoup:1.14.3'
+    implementation 'com.typesafe:config:1.4.1'
+    implementation 'org.json:json:20211205'
+    implementation 'org.hamcrest:hamcrest-core:2.2'
+}
